@@ -1,16 +1,58 @@
 // NURSERY RHYME LOOP
-var count = 10;
+const list = document.querySelector('#list');
 
-while (count > 1) {
-    console.log(count + " currant buns in a baker’s shop, " + count + " big and round with a cherry on the top. Along came a boy with a penny one day, bought a currant bun and took it away.");
-    count = count - 1;
-    if (count === 1) {
-        console.log(count + " currant bun in a baker’s shop, " + count + " big and round with a cherry on the top. Along came a girl with a penny another day, bought a currant bun and took it away.");
+for(var currants = 10; currants >= 0; currants--) {
+    // console.log(textString);
+    let textString = `${ currants } currant buns in a baker’s shop, ${ currants } big and round with a cherry on the top. Along came a girl with a penny another day, bought a currant bun and took it away.`
 
-        console.log("Now there are no more currant buns that have been baked in the sun.");
-        break;
-    }
+    const verse = document.createElement('p');
+    verse.textContent = textString;
+
+    list.appendChild(verse);
 }
+
+
+
+
+// // NURSERY RHYME LOOP
+// var count = 10;
+
+// while (count > 1) {
+//     console.log(count + " currant buns in a baker’s shop, " + count + " big and round with a cherry on the top. Along came a boy with a penny one day, bought a currant bun and took it away.");
+//     count = count - 1;
+//     if (count === 1) {
+//         console.log(count + " currant bun in a baker’s shop, " + count + " big and round with a cherry on the top. Along came a girl with a penny another day, bought a currant bun and took it away.");
+
+//         console.log("Now there are no more currant buns that have been baked in the sun.");
+//         break;
+//     }
+// }
+
+
+// const title = document.querySelector('#title');
+// const button = document.querySelector('#changeTitle');
+
+// const list = document.querySelector('list');
+// const addItemBtn = document.querySelector('#addItem');
+
+// console.log(button);
+
+// button.addEventListener('click', function() {
+//     title.textContent = 'Goodbye';
+//     title.style.color = 'red';
+// });
+
+// addItemBtn.addEventListener('click', function() {
+//     const li = document.createElement('li');
+//     li.textContent = "New Item";
+
+//     list.appendChild(li);
+// })
+
+
+
+
+
 
 
 // WHILE LOOP IN CLASS EXAMPLE
